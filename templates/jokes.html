@@ -1,0 +1,17 @@
+<div id="jokes-list">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>JOKE</th>
+                <th>DELETE</th>
+            </tr>
+        </thead>
+        <tbody id="jokes-list-content">
+            {% for joke in jokes %}
+                {% include "joke.html" %}
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+

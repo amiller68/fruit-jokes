@@ -1,0 +1,25 @@
+[package]
+name = "krondor-chess"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+askama = { version = "0.12.1", features = ["with-axum"] }
+askama_axum = "0.4.0"
+axum = "0.7.3"
+serde = { version = "1.0.195", features = ["derive"] }
+shuttle-axum = "0.36.0"
+shuttle-runtime = "0.36.0"
+shuttle-shared-db = { version = "0.36.0", features = ["postgres"] }
+sqlx = { version = "0.7.3", features = ["macros"] }
+thiserror = "1.0.56"
+tokio = "1.28.2"
+tower-http = { version = "0.5.1", features = ["fs"] }
+
+tracing = "^0.1"
+
+
+# TODO: add prop tests for database types
+# [dev-dependencies]
+# proptest = "1.4.0"
+# proptest-derive = "0.4.0"

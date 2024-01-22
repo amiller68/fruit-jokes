@@ -1,0 +1,8 @@
+{% let id = joke.id() %}
+{% let content = joke.content() %}
+
+<tr id="joke-{{ id }}">
+	<td> {{ id }} </td>
+	<td id="joke-content-{{ id }}"> {{ content }} </td>
+	<td><button hx-delete="/jokes/{{ id }}" hx-trigger="click" hx-target="#joke-{{ id }}" hx-swap="delete">Delete</button></td>
+</tr>

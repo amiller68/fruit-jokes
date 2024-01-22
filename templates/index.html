@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Fruit Jokes{% endblock %}
+
+{% block content %}
+<h1>Fruit Jokes</h1>
+<form id="add-joke-form">
+	<input placeholder="What's so funny?" required type=text name="content">
+	<!-- Note the use `jokes-list-content`. This id exists in `jokes.html`  -->
+	<button hx-post="/jokes" hx-trigger="click" hx-target="#jokes-list-content" hx-swap="beforeend">New Joke</button>
+</form>
+<div id="list" hx-get="/jokes" hx-target="this" hx-trigger="load" hx-swap="outerHTML">
+	Loading...
+</div>
+{% endblock %}
+
