@@ -1,5 +1,5 @@
 [package]
-name = "krondor-chess"
+name = "fruit-jokes"
 version = "0.1.0"
 edition = "2021"
 
@@ -17,9 +17,3 @@ tokio = "1.28.2"
 tower-http = { version = "0.5.1", features = ["fs"] }
 
 tracing = "^0.1"
-
-
-# TODO: add prop tests for database types
-# [dev-dependencies]
-# proptest = "1.4.0"
-# proptest-derive = "0.4.0"

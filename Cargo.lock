@@ -676,6 +676,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "fruit-jokes"
+version = "0.1.0"
+dependencies = [
+ "askama",
+ "askama_axum",
+ "axum 0.7.4",
+ "serde",
+ "shuttle-axum",
+ "shuttle-runtime",
+ "shuttle-shared-db",
+ "sqlx",
+ "thiserror",
+ "tokio",
+ "tower-http 0.5.1",
+ "tracing",
+]
+
+[[package]]
 name = "futures-channel"
 version = "0.3.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1199,24 +1217,6 @@ dependencies = [
  "serde",
  "serde_json",
  "simple_asn1",
-]
-
-[[package]]
-name = "krondor-chess"
-version = "0.1.0"
-dependencies = [
- "askama",
- "askama_axum",
- "axum 0.7.4",
- "serde",
- "shuttle-axum",
- "shuttle-runtime",
- "shuttle-shared-db",
- "sqlx",
- "thiserror",
- "tokio",
- "tower-http 0.5.1",
- "tracing",
 ]
 
 [[package]]
